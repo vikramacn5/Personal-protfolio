@@ -1,0 +1,22 @@
+.section-about {
+  background-color: $color-background;
+  padding: 12rem 0;
+  margin-top: 2rem;
+}
+
+.section-contact {
+  padding: 12rem 0;
+}
+
+.section-projects {
+  padding: 12rem 0;
+}
+
+.section-to-hide > * {
+  transition: transform 0.6s ease-out 0.1s;
+}
+
+.section--hidden > * {
+  transform: translateY(15rem);
+  opacity: 0;
+}

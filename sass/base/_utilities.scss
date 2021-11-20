@@ -1,0 +1,34 @@
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+
+  @include respond(phone-sm) {
+    padding: 1rem 2.5rem;
+  }
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.u-section-border-bottom {
+  border-bottom: 1px solid $color-section-border;
+}

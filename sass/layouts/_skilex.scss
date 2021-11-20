@@ -1,0 +1,125 @@
+.skilex {
+  &__btn-div {
+    text-align: center;
+  }
+
+  &__btn-div {
+    margin-bottom: 6rem;
+  }
+
+  &__btn {
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border-radius: 100px;
+    background-color: $color-background;
+    border: none;
+    color: $color-grey-light;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #141414, -3px -3px 5px #303030;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__btn--active {
+    box-shadow: inset 2.5px 2.5px 5px #141414, inset -2.5px -2.5px 5px #303030;
+    color: $color-primary-light;
+  }
+
+  &__skills-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 4rem;
+    justify-items: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // &__skill-container {
+  //   height: 10rem;
+  //   width: 100%;
+  //   background-color: lightgreen;
+  // }
+
+  &__skill {
+    // height: 60%;
+    width: 90%;
+    // background-color: lightyellow;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &-details {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-name {
+      text-transform: uppercase;
+    }
+
+    &-percentage {
+      &--html {
+        margin-right: calc(100% - 75%);
+      }
+      &--javascript {
+        margin-right: calc(100% - 85%);
+      }
+      &--css {
+        margin-right: calc(100% - 80%);
+      }
+      &--react {
+        margin-right: calc(100% - 75%);
+      }
+      &--express {
+        margin-right: calc(100% - 85%);
+      }
+      &--mongo {
+        margin-right: calc(100% - 80%);
+      }
+    }
+
+    &-bar {
+      width: 100%;
+      margin-top: 1.2rem;
+      height: 1.2rem;
+      border-radius: 50px;
+      position: relative;
+      box-shadow: inset 1.5px 1.5px 3px #141414, inset -1.5px -1.5px 3px #303030;
+
+      &::after {
+        content: "";
+        width: 50%;
+        height: 40%;
+        position: absolute;
+        top: 50%;
+        left: 1px;
+        transform: translateY(-50%);
+        background-color: $color-primary-light;
+        border-radius: 100px;
+      }
+
+      &--html::after {
+        width: 75%;
+      }
+      &--javascript::after {
+        width: 85%;
+      }
+      &--css::after {
+        width: 80%;
+      }
+      &--react::after {
+        width: 75%;
+      }
+      &--express::after {
+        width: 85%;
+      }
+      &--mongo::after {
+        width: 80%;
+      }
+    }
+  }
+}
