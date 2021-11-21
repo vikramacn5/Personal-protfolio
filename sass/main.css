@@ -368,6 +368,13 @@ body {
 .project__icon {
   font-size: 4rem;
   color: #fff;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.project__github-link:hover .project__icon,
+.project__github-link:active .project__icon {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .project:hover .project__github-link {
@@ -509,6 +516,10 @@ body {
     visibility: visible;
     -webkit-transition: none;
     transition: none;
+  }
+  .project__github-link:hover + .project__link .project__content {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .project__container {
     width: 100%;

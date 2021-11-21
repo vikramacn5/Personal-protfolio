@@ -55,6 +55,12 @@
   &__icon {
     font-size: 4rem;
     color: $color-white;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &__github-link:hover &__icon,
+  &__github-link:active &__icon {
+    color: rgba(#000, 0.6);
   }
 
   &:hover &__github-link {
@@ -214,6 +220,10 @@
         visibility: visible;
         transition: none;
       }
+    }
+
+    &__github-link:hover + &__link &__content {
+      transform: translateY(0);
     }
 
     // &__icon {
