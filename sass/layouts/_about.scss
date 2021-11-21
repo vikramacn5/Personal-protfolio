@@ -17,6 +17,7 @@
     height: 30rem;
     border-radius: 3px;
     filter: brightness(0.8) contrast(1.2) saturate(1.5) sepia(0.5);
+    position: relative;
 
     @include respond(phone-sm) {
       width: Min(100%, 30rem);

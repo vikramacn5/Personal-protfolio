@@ -48,6 +48,7 @@
 
   &__hello {
     font-size: 2rem;
+    font-family: "Space Mono", monospace;
   }
 
   &__name {
@@ -64,8 +65,8 @@
     font-size: 1.8rem;
     color: $color-white;
     letter-spacing: 0.15rem;
-    font-family: libre-baskerville, serif;
-    font-style: italic;
+    font-family: "Space Mono", monospace;
+    // font-style: italic;
     display: block;
     border-bottom: 1px solid $color-primary;
   }

@@ -25,7 +25,7 @@
     //   }
     // }
 
-    @include respond(phone-sm) {
+    @include respond(phone) {
       width: 100%;
     }
   }
@@ -42,7 +42,7 @@
       grid-row: 4/5;
     }
 
-    @include respond(phone-sm) {
+    @include respond(phone) {
       width: 100%;
     }
   }

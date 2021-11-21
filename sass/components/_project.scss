@@ -17,7 +17,7 @@
       url("/img/projectForkify1.png");
   }
 
-  &--bankist {
+  &--banker {
     background-image: linear-gradient(
         to right top,
         rgba(#000, 0.8),
@@ -34,27 +34,54 @@
       ),
       url("/img/projectMapty1.png");
   }
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
 
-  &:link,
-  &:visited {
+  &__github-link {
+    &:link,
+    &:visited {
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease 0.6s;
+      z-index: 1;
+    }
+  }
+
+  &__icon {
+    font-size: 4rem;
+    color: $color-white;
+  }
+
+  &:hover &__github-link {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__link:link,
+  &__link:visited {
     background-size: cover;
     background-position: center;
     border-radius: 3px;
-    overflow: hidden;
+    // overflow: hidden;
     text-decoration: none;
     box-shadow: 2px 2px 4px #181818;
     transition: all 0.3s ease-in-out;
   }
 
-  &:hover,
-  &:active {
+  &__link:hover,
+  &__link:active {
     transform: translateY(-3px) scale(1.02);
     box-shadow: 15px 15px 29px #161616;
   }
 
   &__container {
     width: 100%;
-    height: 30rem;
+    height: 32rem;
     position: relative;
     color: $color-white;
 
@@ -70,7 +97,7 @@
         rgba($color-primary-light, 1),
         rgba($color-primary-light, 0.8)
       );
-      width: 0;
+      // width: 0;
       transition: all 0.3s ease 0.3s;
       animation-direction: reverse;
     }
@@ -87,11 +114,13 @@
     transition: all 0.3s ease;
   }
 
-  &:hover &__image {
+  &__link:hover &__image,
+  &__github-link:hover + &__link &__image {
     transform: translateX(-50%);
   }
 
-  &:hover &__container::after {
+  &__link:hover &__container::after,
+  &__github-link:hover + &__link &__container::after {
     width: 100%;
   }
 
@@ -119,18 +148,150 @@
     position: absolute;
     width: 85%;
     font-size: 1.4rem;
-    top: 45%;
+    top: 40%;
     left: 8%;
     z-index: 1;
     transition: all 0.3s ease 0.3s;
   }
 
-  &:hover &__content {
-    transform: translateY(-13rem);
+  &__description {
+    margin-bottom: 1rem;
   }
 
-  &:hover &__info {
+  &__link:hover &__content,
+  &__github-link:hover + &__link &__content {
+    transform: translateY(-15rem);
+  }
+
+  &__link:hover &__info,
+  &__github-link:hover + &__link &__info {
     opacity: 1;
     visibility: visible;
+  }
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    // width <= 900 ?
+    &--natourae {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-light, 1),
+          rgba($color-primary-light, 0.8)
+        ),
+        url("/img/projectNatourae1.png");
+    }
+
+    &--forkify {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-light, 1),
+          rgba($color-primary-light, 0.8)
+        ),
+        url("/img/projectForkify1.png");
+    }
+
+    &--banker {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-light, 1),
+          rgba($color-primary-light, 0.8)
+        ),
+        url("/img/projectBankist1.png");
+    }
+
+    &--mapty {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-light, 1),
+          rgba($color-primary-light, 0.8)
+        ),
+        url("/img/projectMapty1.png");
+    }
+
+    &__github-link {
+      &:link,
+      &:visited {
+        opacity: 1;
+        visibility: visible;
+        transition: none;
+      }
+    }
+
+    // &__icon {
+    //   font-size: 4rem;
+    //   color: $color-white;
+    // }
+
+    &__container {
+      width: 100%;
+      height: auto;
+      position: relative;
+      color: $color-white;
+      padding: 4rem 6rem;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__content {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      transition: none;
+      margin-bottom: 2.5rem;
+    }
+
+    // &__title {
+    //   font-size: 3rem;
+    //   font-weight: 900;
+    //   letter-spacing: 0.3rem;
+    // }
+
+    // &__sub-title {
+    //   font-size: 1.5rem;
+    // }
+
+    &__info {
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+      width: 100%;
+      font-size: 1.4rem;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      transition: none;
+    }
+
+    &__description {
+      margin-bottom: 1.5rem;
+    }
+
+    &__link:hover &__content {
+      transform: translateY(0);
+    }
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    &__container {
+      padding: 4rem 2rem;
+    }
+
+    // &__title {
+    //   font-size: 2.5rem;
+    // }
+
+    // &__sub-title {
+    //   font-size: 1.2rem;
+    // }
+
+    // &__info {
+    //   font-size: 1.2rem;
+    // }
   }
 }
