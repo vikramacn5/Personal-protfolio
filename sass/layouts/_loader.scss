@@ -1,13 +1,13 @@
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
+// @keyframes fadeout {
+//   0% {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+//   100% {
+//     opacity: 0;
+//     visibility: hidden;
+//   }
+// }
 
 .loading-screen {
   height: 100vh;
@@ -17,17 +17,23 @@
   display: grid;
   grid-template-columns: minmax(12rem, 15%);
   // grid-template-columns: 12rem;
-  // opacity: 0;
-  // visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
   justify-content: center;
   align-content: center;
   justify-items: center;
   background-color: $color-background;
-  animation: fadeout 0.3s ease 1.5s forwards;
+  // animation: fadeout 0.3s ease 1.5s forwards;
+  transition: all 0.2s ease;
 
   & .loading-logo {
     width: 100%;
   }
+}
+
+.loading-screen.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .stop-scroll {

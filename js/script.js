@@ -30,11 +30,11 @@ const skillsBox = document.querySelector(".skilex__skills-box");
 // const designation = document.querySelector('.header__designaton');
 
 // loadingScreen.classList.add("active");
-
 body.classList.add("stop-scroll");
-setTimeout(() => {
+
+window.addEventListener("load", function () {
   body.classList.remove("stop-scroll");
-  // loadingScreen.classList.remove("active");
+  loadingScreen.classList.remove("active");
   const text = baffle(".header__designation");
   text.set({
     characters: "█▓▒░█▓▒░█▓▒░<>/",
@@ -43,7 +43,20 @@ setTimeout(() => {
 
   text.start();
   text.reveal(5000);
-}, 1400);
+});
+
+// setTimeout(() => {
+//   body.classList.remove("stop-scroll");
+//   // loadingScreen.classList.remove("active");
+//   const text = baffle(".header__designation");
+//   text.set({
+//     characters: "█▓▒░█▓▒░█▓▒░<>/",
+//     speed: 50,
+//   });
+
+//   text.start();
+//   text.reveal(5000);
+// }, 1400);
 
 // ------------------ SMOOTH SCROLLING ------------------- //
 

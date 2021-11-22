@@ -571,28 +571,6 @@ body {
   }
 }
 
-@-webkit-keyframes fadeout {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
 .loading-screen {
   height: 100vh;
   width: 100vw;
@@ -602,6 +580,8 @@ body {
   display: grid;
   -ms-grid-columns: minmax(12rem, 15%);
       grid-template-columns: minmax(12rem, 15%);
+  opacity: 0;
+  visibility: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -609,12 +589,17 @@ body {
       align-content: center;
   justify-items: center;
   background-color: #222222;
-  -webkit-animation: fadeout 0.3s ease 1.5s forwards;
-          animation: fadeout 0.3s ease 1.5s forwards;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .loading-screen .loading-logo {
   width: 100%;
+}
+
+.loading-screen.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .stop-scroll {
