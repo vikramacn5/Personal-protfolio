@@ -4,7 +4,7 @@
   "description": "Portfolio website",
   "main": "index.html",
   "scripts": {
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/main.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all prefix:css compress:css"
   },

@@ -895,7 +895,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(65deg, #222222 30%, rgba(0, 0, 0, 0.2)), url("../img/bg-01.jpg");
+  background-image: linear-gradient(65deg, #222222 30%, rgba(0, 0, 0, 0.2)), url("../img/bg-02.jpg");
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.8);
@@ -904,7 +904,7 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .header {
-    background-image: linear-gradient(45deg, #222222 35%, rgba(0, 0, 0, 0.2)), url("../img/bg-01.jpg");
+    background-image: linear-gradient(45deg, #222222 35%, rgba(0, 0, 0, 0.2)), url("../img/bg-02.jpg");
   }
 }
 
