@@ -1,7 +1,7 @@
 .about-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
-  margin-bottom: 10rem;
+  // margin-bottom: 10rem;
 
   @include respond(tab-port) {
     grid-template-columns: 1fr;
@@ -29,11 +29,29 @@
     // width: 40%;
     // padding: 0 1rem;
     // background-color: red;
+    // grid-row: 1/2;
+    // grid-column: 1/2;
 
-    @include respond(tab-port) {
-      text-align: left;
-      grid-row: 1/2;
+    // @include respond(tab-port) {
+    //   // text-align: left;
+    //   grid-row: 1/2;
+    // }
+
+    &-text {
+      margin-bottom: 1.5rem;
     }
+  }
+
+  &__tech-list {
+    // list-style: none;
+    font-family: "Space Mono", monospace;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-column-gap: 8rem;
+    grid-row-gap: 0.4rem;
+    color: $color-white;
+    font-size: 1.4rem;
+    padding-left: 3rem;
   }
 
   &__cta-container {

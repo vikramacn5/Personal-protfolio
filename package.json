@@ -1,0 +1,28 @@
+{
+  "name": "vikram-portfolio_website",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikramacn5/Personal-protfolio.git"
+  },
+  "author": "MARK-4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikramacn5/Personal-protfolio/issues"
+  },
+  "homepage": "https://github.com/vikramacn5/Personal-protfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "concat": "^1.0.3",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^9.0.2"
+  }
+}

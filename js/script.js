@@ -13,17 +13,17 @@ const aboutSkill = document.querySelector(".skilex__btn--skill");
 const aboutExperience = document.querySelector(".skilex__btn--experience");
 const skillsBox = document.querySelector(".skilex__skills-box");
 
-aboutSkill.addEventListener("click", function () {
-  this.classList.add("skilex__btn--active");
-  aboutExperience.classList.remove("skilex__btn--active");
-  skillsBox.classList.remove("hidden");
-});
+// aboutSkill.addEventListener("click", function () {
+//   this.classList.add("skilex__btn--active");
+//   aboutExperience.classList.remove("skilex__btn--active");
+//   skillsBox.classList.remove("hidden");
+// });
 
-aboutExperience.addEventListener("click", function () {
-  this.classList.add("skilex__btn--active");
-  aboutSkill.classList.remove("skilex__btn--active");
-  skillsBox.classList.add("hidden");
-});
+// aboutExperience.addEventListener("click", function () {
+//   this.classList.add("skilex__btn--active");
+//   aboutSkill.classList.remove("skilex__btn--active");
+//   skillsBox.classList.add("hidden");
+// });
 
 // const designation = document.querySelector('.header__designaton');
 

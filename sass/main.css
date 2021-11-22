@@ -151,6 +151,7 @@ body {
   text-decoration: none;
   background: #222222;
   font-size: 1.5rem;
+  font-family: "Space Mono", monospace;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
   border-radius: 100px;
@@ -941,6 +942,7 @@ body {
   color: #fff;
   letter-spacing: 0.15rem;
   font-family: "Space Mono", monospace;
+  font-weight: 400;
   display: block;
   border-bottom: 1px solid #18d26e;
 }
@@ -1034,7 +1036,6 @@ body {
   display: grid;
   -ms-grid-columns: (minmax(34rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
-  margin-bottom: 10rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1066,13 +1067,22 @@ body {
   }
 }
 
-@media only screen and (max-width: 56.25em) {
-  .about-box__content {
-    text-align: left;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
+.about-box__content-text {
+  margin-bottom: 1.5rem;
+}
+
+.about-box__tech-list {
+  font-family: "Space Mono", monospace;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, max-content))[2];
+      grid-template-columns: repeat(2, minmax(-webkit-min-content, -webkit-max-content));
+      grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-column-gap: 8rem;
+  grid-row-gap: 0.4rem;
+  color: #fff;
+  font-size: 1.4rem;
+  padding-left: 3rem;
 }
 
 .about-box__cta-container {
