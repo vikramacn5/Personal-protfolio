@@ -8,6 +8,8 @@ const aboutContactButton = document.querySelector(".about-box__btn-contact");
 const hamburgerBtn = document.querySelector(".hamburger-btn");
 const hamburgerNavList = document.querySelector(".hamburger__nav-list");
 const overlay = document.querySelector(".overlay");
+const loadingScreen = document.querySelector(".loading-screen");
+const body = document.querySelector("body");
 
 const aboutSkill = document.querySelector(".skilex__btn--skill");
 const aboutExperience = document.querySelector(".skilex__btn--experience");
@@ -27,14 +29,21 @@ const skillsBox = document.querySelector(".skilex__skills-box");
 
 // const designation = document.querySelector('.header__designaton');
 
-const text = baffle(".header__designation");
-text.set({
-  characters: "█▓▒░█▓▒░█▓▒░<>/",
-  speed: 50,
-});
+// loadingScreen.classList.add("active");
 
-text.start();
-text.reveal(5000);
+body.classList.add("stop-scroll");
+setTimeout(() => {
+  body.classList.remove("stop-scroll");
+  // loadingScreen.classList.remove("active");
+  const text = baffle(".header__designation");
+  text.set({
+    characters: "█▓▒░█▓▒░█▓▒░<>/",
+    speed: 50,
+  });
+
+  text.start();
+  text.reveal(5000);
+}, 1400);
 
 // ------------------ SMOOTH SCROLLING ------------------- //
 
