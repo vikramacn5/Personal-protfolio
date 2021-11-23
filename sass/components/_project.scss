@@ -38,6 +38,12 @@
   background-position: center;
   overflow: hidden;
   position: relative;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 15px 15px 29px #161616;
+  }
 
   &__github-link {
     &:link,
@@ -77,12 +83,6 @@
     text-decoration: none;
     box-shadow: 2px 2px 4px #181818;
     transition: all 0.3s ease-in-out;
-  }
-
-  &__link:hover,
-  &__link:active {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 15px 15px 29px #161616;
   }
 
   &__container {
