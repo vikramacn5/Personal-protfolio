@@ -22,6 +22,13 @@
     /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      .hide-body {
+        visibility: hidden;
+        opacity: 0;
+        /* display: none; */
+      }
+    </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
@@ -47,582 +54,604 @@
     <script defer src="/js/script.js"></script>
   </head>
   <body>
-    <div class="loading-screen active">
+    <div class="loading-screen">
       <img src="/img/mark4FullMSpacedout.png" alt="Logo" class="loading-logo" />
     </div>
-    <header id="header" class="header">
-      <!-- <div class="header__image-container">
-        <img src="/img/me3.png" alt="profile picture" class="header__image" />
-      </div> -->
-      <nav class="header__nav">
-        <a href="#"
-          ><img src="/img/logoShort.png" alt="Logo" class="header__nav-logo"
-        /></a>
-        <div class="header__nav--big">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a
-                href="#header"
-                class="
-                  header__nav-link
-                  nav-link
-                  header__nav-link--home header__nav-link--active
-                "
-                >Home</a
-              >
-            </li>
-            <li class="header__nav-item">
-              <a
-                href="#section-about"
-                class="header__nav-link nav-link header__nav-link--about"
-                >About</a
-              >
-            </li>
-            <li class="header__nav-item">
-              <a
-                href="#section-projects"
-                class="header__nav-link nav-link header__nav-link--projects"
-                >Projects</a
-              >
-            </li>
-            <li class="header__nav-item">
-              <a
-                href="#section-contact"
-                class="header__nav-link nav-link header__nav-link--contact"
-                >contact</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="header__nav--small">
-          <div class="hamburger-btn">
-            <div>&nbsp;</div>
-          </div>
-          <div class="overlay">&nbsp;</div>
-          <div class="hamburger__nav">
-            <ul class="hamburger__nav-list">
-              <li class="hamburger__nav-item">
-                <a href="#header" class="hamburger__nav-link nav-link">Home</a>
+    <div class="fouc">
+      <script>
+        document.querySelector(".fouc").classList.add("hide-body");
+        document.querySelector(".loading-screen").classList.add("active");
+      </script>
+      <header id="header" class="header">
+        <!-- <div class="header__image-container">
+          <img src="/img/me3.png" alt="profile picture" class="header__image" />
+        </div> -->
+        <nav class="header__nav">
+          <a href="#"
+            ><img src="/img/logoShort.png" alt="Logo" class="header__nav-logo"
+          /></a>
+          <div class="header__nav--big">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a
+                  href="#header"
+                  class="
+                    header__nav-link
+                    nav-link
+                    header__nav-link--home header__nav-link--active
+                  "
+                  >Home</a
+                >
               </li>
-              <li class="hamburger__nav-item">
-                <a href="#section-about" class="hamburger__nav-link nav-link"
+              <li class="header__nav-item">
+                <a
+                  href="#section-about"
+                  class="header__nav-link nav-link header__nav-link--about"
                   >About</a
                 >
               </li>
-              <li class="hamburger__nav-item">
-                <a href="#section-projects" class="hamburger__nav-link nav-link"
+              <li class="header__nav-item">
+                <a
+                  href="#section-projects"
+                  class="header__nav-link nav-link header__nav-link--projects"
                   >Projects</a
                 >
               </li>
-              <li class="hamburger__nav-item">
-                <a href="#section-contact" class="hamburger__nav-link nav-link"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="header__content-box">
-        <p class="header__hello">Hello</p>
-        <h1 class="header__main-text">
-          <span class="header__name">I'm Vikram</span>
-          <span class="header__designation">Fullstack Web Developer</span>
-        </h1>
-        <div class="header__links">
-          <a href="#section-about" class="header__about-link nav-link"
-            >About me</a
-          >
-          <a
-            href="https://github.com/vikramacn5"
-            target="_blank"
-            class="header__social-link"
-          >
-            <ion-icon
-              name="logo-github"
-              class="header__icon header__icon--github"
-            ></ion-icon>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/vikram-nagarajan-0b9b01189/"
-            target="_blank"
-            class="header__social-link"
-          >
-            <ion-icon
-              name="logo-linkedin"
-              class="header__icon header__icon--linkedin"
-            ></ion-icon>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section
-        id="section-about"
-        class="section-about u-section-border-bottom section-to-hide"
-      >
-        <div class="row">
-          <h2 class="heading-secondary u-margin-bottom-big center-align">
-            About me
-          </h2>
-          <div class="about-box">
-            <div class="about-box__content">
-              <p class="paragraph about-box__content-text">
-                Hello! My name is Vikram and I enjoy creating things that live
-                on the internet. My interest in web development started back in
-                2019 when I tried to edit dom elements from the chrome developer
-                tools, which I felt really cool and that made me to learn HTML
-                and CSS which was really exciting for me to see the website I
-                created on internet but then I felt that isn't enough for me.
-              </p>
-              <p class="paragraph about-box__content-text">
-                That is when I started to learn more about how the web works and
-                what is this all abstraction about backend and of course
-                javascript became my favorite buddy.
-              </p>
-              <p class="paragraph about-box__content-text">
-                Fast forward now I am a freelance web developer ocasionally
-                takes up projects also work on my own concept projects and still
-                learning and want to learn the new and emerging technologies in
-                web development domain.
-              </p>
-              <p class="paragraph about-box__content-text">
-                Here are the few technologies I've been working with recently:
-              </p>
-              <div class="about-box__tech-box">
-                <ol class="about-box__tech-list">
-                  <li class="about-box__tech-item">Html, CSS</li>
-                  <li class="about-box__tech-item">JavaScript (ES6+)</li>
-                  <li class="about-box__tech-item">Node.js</li>
-                  <li class="about-box__tech-item">React</li>
-                  <li class="about-box__tech-item">Express</li>
-                  <li class="about-box__tech-item">MongoDB</li>
-                </ol>
-              </div>
-              <div class="about-box__cta-container">
+              <li class="header__nav-item">
                 <a
                   href="#section-contact"
-                  class="nav-link btn-neo btn-neo--green about-box__btn-contact"
-                  >Contact me</a
-                >
-                <a
-                  href="/img/resume.pdf"
-                  target="_blank"
-                  class="btn-neo btn-neo--white about-box__btn-cv"
-                  >Download CV</a
-                >
-              </div>
-            </div>
-            <div class="about-box__photo-box">
-              <img src="/img/me5.jpg" alt="My photo" class="about-box__photo" />
-            </div>
-          </div>
-
-          <!-- <div class="skilex">
-            <div class="skilex__btn-div">
-              <button
-                class="skilex__btn skilex__btn--skill skilex__btn--active"
-                data-about="skill"
-              >
-                skills
-              </button>
-              <button
-                class="skilex__btn skilex__btn--experience"
-                data-about="experience"
-              >
-                experience
-              </button>
-            </div>
-
-            <div class="skilex__skills-box">
-              <div class="skilex__skill">
-                <div class="skilex__skill-details">
-                  <p class="skilex__skill-name paragraph">Html</p>
-                  <p
-                    class="
-                      skilex__skill-percentage skilex__skill-percentage--html
-                      paragraph
-                    "
-                  >
-                    75%
-                  </p>
-                </div>
-                <div class="skilex__skill-bar skilex__skill-bar--html"></div>
-              </div>
-              <div class="skilex__skill">
-                <div class="skilex__skill-details">
-                  <p class="skilex__skill-name paragraph">javascript</p>
-                  <p
-                    class="
-                      skilex__skill-percentage
-                      skilex__skill-percentage--javascript
-                      paragraph
-                    "
-                  >
-                    85%
-                  </p>
-                </div>
-                <div
-                  class="skilex__skill-bar skilex__skill-bar--javascript"
-                ></div>
-              </div>
-              <div class="skilex__skill">
-                <div class="skilex__skill-details">
-                  <p class="skilex__skill-name paragraph">css</p>
-                  <p
-                    class="
-                      skilex__skill-percentage skilex__skill-percentage--css
-                      paragraph
-                    "
-                  >
-                    80%
-                  </p>
-                </div>
-                <div class="skilex__skill-bar skilex__skill-bar--css"></div>
-              </div>
-              <div class="skilex__skill">
-                <div class="skilex__skill-details">
-                  <p class="skilex__skill-name paragraph">react</p>
-                  <p
-                    class="
-                      skilex__skill-percentage skilex__skill-percentage--react
-                      paragraph
-                    "
-                  >
-                    75%
-                  </p>
-                </div>
-                <div class="skilex__skill-bar skilex__skill-bar--react"></div>
-              </div>
-              <div class="skilex__skill">
-                <div class="skilex__skill-details">
-                  <p class="skilex__skill-name paragraph">express</p>
-                  <p
-                    class="
-                      skilex__skill-percentage skilex__skill-percentage--express
-                      paragraph
-                    "
-                  >
-                    85%
-                  </p>
-                </div>
-                <div class="skilex__skill-bar skilex__skill-bar--express"></div>
-              </div>
-              <div class="skilex__skill">
-                <div class="skilex__skill-details">
-                  <p class="skilex__skill-name paragraph">mongo-db</p>
-                  <p
-                    class="
-                      skilex__skill-percentage skilex__skill-percentage--mongo
-                      paragraph
-                    "
-                  >
-                    80%
-                  </p>
-                </div>
-                <div class="skilex__skill-bar skilex__skill-bar--mongo"></div>
-              </div>
-            </div>
-
-            <div class="skilex__experience"></div>
-          </div> -->
-        </div>
-      </section>
-
-      <section
-        id="section-projects"
-        class="section-projects u-section-border-bottom section-to-hide"
-      >
-        <div class="row">
-          <h2 class="heading-secondary u-margin-bottom-big center-align">
-            Projects
-          </h2>
-          <div class="projects">
-            <div class="project project--natourae">
-              <a
-                href="https://github.com/vikramacn5/natourae"
-                target="_blank"
-                class="project__github-link"
-                ><ion-icon name="logo-github" class="project__icon"></ion-icon
-              ></a>
-              <a
-                href="https://natourae.herokuapp.com/"
-                class="project__link"
-                target="_blank"
-              >
-                <div class="project__container">
-                  <img
-                    src="/img/projectNatourae2.png"
-                    alt="Natourae"
-                    class="project__image"
-                  />
-                  <div class="project__content">
-                    <h1 class="project__title">Natourae</h1>
-                    <h3 class="project__sub-title">
-                      Now is the best time for a new adventure
-                    </h3>
-                  </div>
-                  <div class="project__info">
-                    <p class="project__description">
-                      Natourae is a wabsite for booking adventurous tours. This
-                      is a fullstack web application built with user login,
-                      authentication, authorization, mailing, credit card
-                      payment with stripe, booking a tour, CRUD operations and
-                      even more.
-                    </p>
-                    <p class="project__tools-used">
-                      Tools used: Node.js, Express.js, mongoDB, API, JWT,
-                      stripe, sendgrid,
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="project project--forkify">
-              <a
-                href="https://github.com/vikramacn5/Forkify-recipe-project"
-                target="_blank"
-                class="project__github-link"
-                ><ion-icon name="logo-github" class="project__icon"></ion-icon
-              ></a>
-              <a
-                href="https://forkify-mark4.netlify.app/"
-                class="project__link"
-                target="_blank"
-              >
-                <div class="project__container">
-                  <img
-                    src="/img/projectForkify2.png"
-                    alt="Natourae"
-                    class="project__image"
-                  />
-                  <div class="project__content">
-                    <h1 class="project__title">Forkify</h1>
-                    <h3 class="project__sub-title">
-                      There is no “we” in fries. Remember that!
-                    </h3>
-                  </div>
-                  <div class="project__info">
-                    <p class="project__description">
-                      Forkify is a web applicaion that gives you the recipe of
-                      your favorite food. This application allows users to
-                      search food recipes online in the backend database through
-                      API call and it renders it to the page, this also allows
-                      us to add our own recipe into the application, also users
-                      can bookmark their favorite foods.
-                    </p>
-                    <p class="project__tools-used">
-                      Tools used: HTML, CSS, Javascript, API.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="project project--mapty">
-              <a
-                href="https://mapty.netlify.app/"
-                class="project__link"
-                target="_blank"
-              >
-                <div class="project__container">
-                  <img
-                    src="/img/projectMapty2.png"
-                    alt="Natourae"
-                    class="project__image"
-                  />
-                  <div class="project__content">
-                    <h1 class="project__title">Mapty</h1>
-                    <h3 class="project__sub-title">
-                      Okay, now run for your life!
-                    </h3>
-                  </div>
-                  <div class="project__info">
-                    <p class="project__description">
-                      Mapty appliacation allows users to keep track of their
-                      cycling and running progress with the location where they
-                      are. This application is integrated with leaflet map with
-                      functionality of allowing users to add a running or
-                      cycling task to the map with distance, duration and
-                      elevation and a popup message.
-                    </p>
-                    <p class="project__tools-used">
-                      Tools used: HTML, CSS, Javascript, Leaflet.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="project project--banker">
-              <a
-                href="https://github.com/vikramacn5/Banker"
-                target="_blank"
-                class="project__github-link"
-                ><ion-icon name="logo-github" class="project__icon"></ion-icon
-              ></a>
-              <a
-                href="https://bankist.netlify.app/"
-                class="project__link"
-                target="_blank"
-              >
-                <div class="project__container">
-                  <img
-                    src="/img/projectBankist2.png"
-                    alt="Natourae"
-                    class="project__image"
-                  />
-                  <div class="project__content">
-                    <h1 class="project__title">Banker</h1>
-                    <h3 class="project__sub-title">
-                      Banking made virtual and easy
-                    </h3>
-                  </div>
-                  <div class="project__info">
-                    <p class="project__description">
-                      Banker is a web application for virtual banking and
-                      eliminating all the difficulties in banking. This
-                      application allows to transfer money between users also
-                      allows users to get loan from the bank. You can login with
-                      js as username and 1111 as password.
-                    </p>
-                    <p class="project__tools-used">
-                      Tools used: HTML, CSS(Flexbox, Grid), Javascript.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-contact" class="section-contact section-to-hide">
-        <div class="row">
-          <div class="center-align">
-            <h2 class="heading-secondary u-margin-bottom-big">Contact</h2>
-          </div>
-          <form name="contact" class="form" netlify>
-            <div class="form__box">
-              <div class="form__group">
-                <input
-                  type="text"
-                  id="name"
-                  class="form__input"
-                  placeholder="Your Name"
-                  name="name"
-                  required
-                />
-                <label for="name" class="form__label">Your Name</label>
-              </div>
-              <div class="form__group">
-                <input
-                  type="email"
-                  id="email"
-                  class="form__input"
-                  placeholder="Your Email"
-                  name="email"
-                  required
-                />
-                <label for="email" class="form__label">Your Email</label>
-              </div>
-              <div class="form__group">
-                <input
-                  type="text"
-                  id="subject"
-                  class="form__input"
-                  placeholder="Subject"
-                  name="subject"
-                  required
-                />
-                <label for="subject" class="form__label">Subject</label>
-              </div>
-              <!-- <div class="form__group--textarea">
-                <textarea
-                  name="message"
-                  id="message"
-                  class="form__input--textarea"
-                  cols="40"
-                  rows="10"
-                  placeholder="Enter you message here"
-                ></textarea>
-              </div> -->
-              <textarea
-                name="message"
-                id="message"
-                class="form__input--textarea"
-                rows="10"
-                placeholder="Enter you message here"
-              ></textarea>
-            </div>
-            <div class="form__btn right-align">
-              <button type="submit" class="btn-neo btn-neo--green">
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__logo-box center-align">
-        <img
-          src="img/mark4FullMSpacedout.png"
-          alt="Logo"
-          class="footer__logo"
-        />
-      </div>
-      <div class="row">
-        <div class="footer__details">
-          <nav class="footer__nav">
-            <ul class="footer__nav-list">
-              <li class="footer__nav-item">
-                <a href="#header" class="footer__nav-link nav-link">Home</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#section-about" class="footer__nav-link nav-link"
-                  >About</a
-                >
-              </li>
-              <li class="footer__nav-item">
-                <a href="#section-projects" class="footer__nav-link nav-link"
-                  >Projects</a
-                >
-              </li>
-              <li class="footer__nav-item">
-                <a href="#section-contact" class="footer__nav-link nav-link"
-                  >Contact</a
+                  class="header__nav-link nav-link header__nav-link--contact"
+                  >contact</a
                 >
               </li>
             </ul>
-          </nav>
-          <div class="footer__copyright-box">
-            <p class="footer__copyright">
-              Copyright &copy; 2021. Designed and built by MARK-4 with
-              <span
-                ><ion-icon name="heart" class="footer__heart"></ion-icon
-              ></span>
-            </p>
+          </div>
+          <div class="header__nav--small">
+            <div class="hamburger-btn">
+              <div>&nbsp;</div>
+            </div>
+            <div class="overlay">&nbsp;</div>
+            <div class="hamburger__nav">
+              <ul class="hamburger__nav-list">
+                <li class="hamburger__nav-item">
+                  <a href="#header" class="hamburger__nav-link nav-link"
+                    >Home</a
+                  >
+                </li>
+                <li class="hamburger__nav-item">
+                  <a href="#section-about" class="hamburger__nav-link nav-link"
+                    >About</a
+                  >
+                </li>
+                <li class="hamburger__nav-item">
+                  <a
+                    href="#section-projects"
+                    class="hamburger__nav-link nav-link"
+                    >Projects</a
+                  >
+                </li>
+                <li class="hamburger__nav-item">
+                  <a
+                    href="#section-contact"
+                    class="hamburger__nav-link nav-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="header__content-box">
+          <p class="header__hello">Hello</p>
+          <h1 class="header__main-text">
+            <span class="header__name">I'm Vikram</span>
+            <span class="header__designation">Fullstack Web Developer</span>
+          </h1>
+          <div class="header__links">
+            <a href="#section-about" class="header__about-link nav-link"
+              >About me</a
+            >
             <a
               href="https://github.com/vikramacn5"
               target="_blank"
-              class="footer__social-link"
+              class="header__social-link"
             >
-              <ion-icon name="logo-github" class="footer__icon"></ion-icon>
+              <ion-icon
+                name="logo-github"
+                class="header__icon header__icon--github"
+              ></ion-icon>
             </a>
             <a
               href="https://www.linkedin.com/in/vikram-nagarajan-0b9b01189/"
               target="_blank"
-              class="footer__social-link"
+              class="header__social-link"
             >
-              <ion-icon name="logo-linkedin" class="footer__icon"></ion-icon>
+              <ion-icon
+                name="logo-linkedin"
+                class="header__icon header__icon--linkedin"
+              ></ion-icon>
             </a>
           </div>
         </div>
-      </div>
-    </footer>
+      </header>
+
+      <main>
+        <section
+          id="section-about"
+          class="section-about u-section-border-bottom section-to-hide"
+        >
+          <div class="row">
+            <h2 class="heading-secondary u-margin-bottom-big center-align">
+              About me
+            </h2>
+            <div class="about-box">
+              <div class="about-box__content">
+                <p class="paragraph about-box__content-text">
+                  Hello! My name is Vikram and I enjoy creating things that live
+                  on the internet. My interest in web development started back
+                  in 2019 when I tried to edit dom elements from the chrome
+                  developer tools, which I felt really cool and that made me to
+                  learn HTML and CSS which was really exciting for me to see the
+                  website I created on internet but then I felt that isn't
+                  enough for me.
+                </p>
+                <p class="paragraph about-box__content-text">
+                  That is when I started to learn more about how the web works
+                  and what is this all abstraction about backend and of course
+                  javascript became my favorite buddy.
+                </p>
+                <p class="paragraph about-box__content-text">
+                  Fast forward now I am a freelance web developer ocasionally
+                  takes up projects also work on my own concept projects and
+                  still learning and want to learn the new and emerging
+                  technologies in web development domain.
+                </p>
+                <p class="paragraph about-box__content-text">
+                  Here are the few technologies I've been working with recently:
+                </p>
+                <div class="about-box__tech-box">
+                  <ol class="about-box__tech-list">
+                    <li class="about-box__tech-item">Html, CSS</li>
+                    <li class="about-box__tech-item">JavaScript (ES6+)</li>
+                    <li class="about-box__tech-item">Node.js</li>
+                    <li class="about-box__tech-item">React</li>
+                    <li class="about-box__tech-item">Express</li>
+                    <li class="about-box__tech-item">MongoDB</li>
+                  </ol>
+                </div>
+                <div class="about-box__cta-container">
+                  <a
+                    href="#section-contact"
+                    class="
+                      nav-link
+                      btn-neo btn-neo--green
+                      about-box__btn-contact
+                    "
+                    >Contact me</a
+                  >
+                  <a
+                    href="/img/resume.pdf"
+                    target="_blank"
+                    class="btn-neo btn-neo--white about-box__btn-cv"
+                    >Download CV</a
+                  >
+                </div>
+              </div>
+              <div class="about-box__photo-box">
+                <img
+                  src="/img/me5.jpg"
+                  alt="My photo"
+                  class="about-box__photo"
+                />
+              </div>
+            </div>
+
+            <!-- <div class="skilex">
+              <div class="skilex__btn-div">
+                <button
+                  class="skilex__btn skilex__btn--skill skilex__btn--active"
+                  data-about="skill"
+                >
+                  skills
+                </button>
+                <button
+                  class="skilex__btn skilex__btn--experience"
+                  data-about="experience"
+                >
+                  experience
+                </button>
+              </div>
+  
+              <div class="skilex__skills-box">
+                <div class="skilex__skill">
+                  <div class="skilex__skill-details">
+                    <p class="skilex__skill-name paragraph">Html</p>
+                    <p
+                      class="
+                        skilex__skill-percentage skilex__skill-percentage--html
+                        paragraph
+                      "
+                    >
+                      75%
+                    </p>
+                  </div>
+                  <div class="skilex__skill-bar skilex__skill-bar--html"></div>
+                </div>
+                <div class="skilex__skill">
+                  <div class="skilex__skill-details">
+                    <p class="skilex__skill-name paragraph">javascript</p>
+                    <p
+                      class="
+                        skilex__skill-percentage
+                        skilex__skill-percentage--javascript
+                        paragraph
+                      "
+                    >
+                      85%
+                    </p>
+                  </div>
+                  <div
+                    class="skilex__skill-bar skilex__skill-bar--javascript"
+                  ></div>
+                </div>
+                <div class="skilex__skill">
+                  <div class="skilex__skill-details">
+                    <p class="skilex__skill-name paragraph">css</p>
+                    <p
+                      class="
+                        skilex__skill-percentage skilex__skill-percentage--css
+                        paragraph
+                      "
+                    >
+                      80%
+                    </p>
+                  </div>
+                  <div class="skilex__skill-bar skilex__skill-bar--css"></div>
+                </div>
+                <div class="skilex__skill">
+                  <div class="skilex__skill-details">
+                    <p class="skilex__skill-name paragraph">react</p>
+                    <p
+                      class="
+                        skilex__skill-percentage skilex__skill-percentage--react
+                        paragraph
+                      "
+                    >
+                      75%
+                    </p>
+                  </div>
+                  <div class="skilex__skill-bar skilex__skill-bar--react"></div>
+                </div>
+                <div class="skilex__skill">
+                  <div class="skilex__skill-details">
+                    <p class="skilex__skill-name paragraph">express</p>
+                    <p
+                      class="
+                        skilex__skill-percentage skilex__skill-percentage--express
+                        paragraph
+                      "
+                    >
+                      85%
+                    </p>
+                  </div>
+                  <div class="skilex__skill-bar skilex__skill-bar--express"></div>
+                </div>
+                <div class="skilex__skill">
+                  <div class="skilex__skill-details">
+                    <p class="skilex__skill-name paragraph">mongo-db</p>
+                    <p
+                      class="
+                        skilex__skill-percentage skilex__skill-percentage--mongo
+                        paragraph
+                      "
+                    >
+                      80%
+                    </p>
+                  </div>
+                  <div class="skilex__skill-bar skilex__skill-bar--mongo"></div>
+                </div>
+              </div>
+  
+              <div class="skilex__experience"></div>
+            </div> -->
+          </div>
+        </section>
+
+        <section
+          id="section-projects"
+          class="section-projects u-section-border-bottom section-to-hide"
+        >
+          <div class="row">
+            <h2 class="heading-secondary u-margin-bottom-big center-align">
+              Projects
+            </h2>
+            <div class="projects">
+              <div class="project project--natourae">
+                <a
+                  href="https://github.com/vikramacn5/natourae"
+                  target="_blank"
+                  class="project__github-link"
+                  ><ion-icon name="logo-github" class="project__icon"></ion-icon
+                ></a>
+                <a
+                  href="https://natourae.herokuapp.com/"
+                  class="project__link"
+                  target="_blank"
+                >
+                  <div class="project__container">
+                    <img
+                      src="/img/projectNatourae2.png"
+                      alt="Natourae"
+                      class="project__image"
+                    />
+                    <div class="project__content">
+                      <h1 class="project__title">Natourae</h1>
+                      <h3 class="project__sub-title">
+                        Now is the best time for a new adventure
+                      </h3>
+                    </div>
+                    <div class="project__info">
+                      <p class="project__description">
+                        Natourae is a wabsite for booking adventurous tours.
+                        This is a fullstack web application built with user
+                        login, authentication, authorization, mailing, credit
+                        card payment with stripe, booking a tour, CRUD
+                        operations and even more.
+                      </p>
+                      <p class="project__tools-used">
+                        Tools used: Node.js, Express.js, mongoDB, API, JWT,
+                        stripe, sendgrid,
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="project project--forkify">
+                <a
+                  href="https://github.com/vikramacn5/Forkify-recipe-project"
+                  target="_blank"
+                  class="project__github-link"
+                  ><ion-icon name="logo-github" class="project__icon"></ion-icon
+                ></a>
+                <a
+                  href="https://forkify-mark4.netlify.app/"
+                  class="project__link"
+                  target="_blank"
+                >
+                  <div class="project__container">
+                    <img
+                      src="/img/projectForkify2.png"
+                      alt="Natourae"
+                      class="project__image"
+                    />
+                    <div class="project__content">
+                      <h1 class="project__title">Forkify</h1>
+                      <h3 class="project__sub-title">
+                        There is no “we” in fries. Remember that!
+                      </h3>
+                    </div>
+                    <div class="project__info">
+                      <p class="project__description">
+                        Forkify is a web applicaion that gives you the recipe of
+                        your favorite food. This application allows users to
+                        search food recipes online in the backend database
+                        through API call and it renders it to the page, this
+                        also allows us to add our own recipe into the
+                        application, also users can bookmark their favorite
+                        foods.
+                      </p>
+                      <p class="project__tools-used">
+                        Tools used: HTML, CSS, Javascript, API.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="project project--mapty">
+                <a
+                  href="https://mapty.netlify.app/"
+                  class="project__link"
+                  target="_blank"
+                >
+                  <div class="project__container">
+                    <img
+                      src="/img/projectMapty2.png"
+                      alt="Natourae"
+                      class="project__image"
+                    />
+                    <div class="project__content">
+                      <h1 class="project__title">Mapty</h1>
+                      <h3 class="project__sub-title">
+                        Okay, now run for your life!
+                      </h3>
+                    </div>
+                    <div class="project__info">
+                      <p class="project__description">
+                        Mapty appliacation allows users to keep track of their
+                        cycling and running progress with the location where
+                        they are. This application is integrated with leaflet
+                        map with functionality of allowing users to add a
+                        running or cycling task to the map with distance,
+                        duration and elevation and a popup message.
+                      </p>
+                      <p class="project__tools-used">
+                        Tools used: HTML, CSS, Javascript, Leaflet.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="project project--banker">
+                <a
+                  href="https://github.com/vikramacn5/Banker"
+                  target="_blank"
+                  class="project__github-link"
+                  ><ion-icon name="logo-github" class="project__icon"></ion-icon
+                ></a>
+                <a
+                  href="https://bankist.netlify.app/"
+                  class="project__link"
+                  target="_blank"
+                >
+                  <div class="project__container">
+                    <img
+                      src="/img/projectBankist2.png"
+                      alt="Natourae"
+                      class="project__image"
+                    />
+                    <div class="project__content">
+                      <h1 class="project__title">Banker</h1>
+                      <h3 class="project__sub-title">
+                        Banking made virtual and easy
+                      </h3>
+                    </div>
+                    <div class="project__info">
+                      <p class="project__description">
+                        Banker is a web application for virtual banking and
+                        eliminating all the difficulties in banking. This
+                        application allows to transfer money between users also
+                        allows users to get loan from the bank. You can login
+                        with js as username and 1111 as password.
+                      </p>
+                      <p class="project__tools-used">
+                        Tools used: HTML, CSS(Flexbox, Grid), Javascript.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="section-contact" class="section-contact section-to-hide">
+          <div class="row">
+            <div class="center-align">
+              <h2 class="heading-secondary u-margin-bottom-big">Contact</h2>
+            </div>
+            <form name="contact" class="form" netlify>
+              <div class="form__box">
+                <div class="form__group">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form__input"
+                    placeholder="Your Name"
+                    name="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Your Name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form__input"
+                    placeholder="Your Email"
+                    name="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Your Email</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    id="subject"
+                    class="form__input"
+                    placeholder="Subject"
+                    name="subject"
+                    required
+                  />
+                  <label for="subject" class="form__label">Subject</label>
+                </div>
+                <!-- <div class="form__group--textarea">
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form__input--textarea"
+                    cols="40"
+                    rows="10"
+                    placeholder="Enter you message here"
+                  ></textarea>
+                </div> -->
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form__input--textarea"
+                  rows="10"
+                  placeholder="Enter you message here"
+                ></textarea>
+              </div>
+              <div class="form__btn right-align">
+                <button type="submit" class="btn-neo btn-neo--green">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__logo-box center-align">
+          <img
+            src="img/mark4FullMSpacedout.png"
+            alt="Logo"
+            class="footer__logo"
+          />
+        </div>
+        <div class="row">
+          <div class="footer__details">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#header" class="footer__nav-link nav-link">Home</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#section-about" class="footer__nav-link nav-link"
+                    >About</a
+                  >
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#section-projects" class="footer__nav-link nav-link"
+                    >Projects</a
+                  >
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#section-contact" class="footer__nav-link nav-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__copyright-box">
+              <p class="footer__copyright">
+                Copyright &copy; 2021. Designed and built by MARK-4 with
+                <span
+                  ><ion-icon name="heart" class="footer__heart"></ion-icon
+                ></span>
+              </p>
+              <a
+                href="https://github.com/vikramacn5"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <ion-icon name="logo-github" class="footer__icon"></ion-icon>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vikram-nagarajan-0b9b01189/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <ion-icon name="logo-linkedin" class="footer__icon"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

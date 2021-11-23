@@ -33,6 +33,7 @@ const skillsBox = document.querySelector(".skilex__skills-box");
 body.classList.add("stop-scroll");
 
 window.addEventListener("load", function () {
+  document.querySelector(".fouc").classList.remove("hide-body");
   body.classList.remove("stop-scroll");
   loadingScreen.classList.remove("active");
   const text = baffle(".header__designation");
