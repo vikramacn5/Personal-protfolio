@@ -8,6 +8,15 @@
       url("/img/projectNatourae1.png");
   }
 
+  &--crown-clothing {
+    background-image: linear-gradient(
+        to right top,
+        rgba(#000, 0.8),
+        rgba(#000, 0.3)
+      ),
+      url("/img/projectCrownClothing1.png");
+  }
+
   &--forkify {
     background-image: linear-gradient(
         to right top,
@@ -26,14 +35,15 @@
       url("/img/projectBankist1.png");
   }
 
-  &--mapty {
-    background-image: linear-gradient(
-        to right top,
-        rgba(#000, 0.8),
-        rgba(#000, 0.3)
-      ),
-      url("/img/projectMapty1.png");
-  }
+  // &--mapty {
+  //   background-image: linear-gradient(
+  //       to right top,
+  //       rgba(#000, 0.8),
+  //       rgba(#000, 0.3)
+  //     ),
+  //     url("/img/projectMapty1.png");
+  // }
+
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -164,6 +174,10 @@
     margin-bottom: 1rem;
   }
 
+  &__tools-used {
+    color: #181818;
+  }
+
   &__link:hover &__content,
   &__github-link:hover + &__link &__content {
     transform: translateY(-15rem);
@@ -186,6 +200,15 @@
         url("/img/projectNatourae1.png");
     }
 
+    &--crown-clothing {
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-light, 1),
+          rgba($color-primary-light, 0.8)
+        ),
+        url("/img/projectCrownClothing1.png");
+    }
+
     &--forkify {
       background-image: linear-gradient(
           to right,
@@ -204,14 +227,14 @@
         url("/img/projectBankist1.png");
     }
 
-    &--mapty {
-      background-image: linear-gradient(
-          to right,
-          rgba($color-primary-light, 1),
-          rgba($color-primary-light, 0.8)
-        ),
-        url("/img/projectMapty1.png");
-    }
+    // &--mapty {
+    //   background-image: linear-gradient(
+    //       to right,
+    //       rgba($color-primary-light, 1),
+    //       rgba($color-primary-light, 0.8)
+    //     ),
+    //     url("/img/projectMapty1.png");
+    // }
 
     &__github-link {
       &:link,
