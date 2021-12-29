@@ -342,6 +342,11 @@ body {
   background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("/img/projectNatourae1.png");
 }
 
+.project--crown-clothing {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.3))), url("/img/projectCrownClothing1.png");
+  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("/img/projectCrownClothing1.png");
+}
+
 .project--forkify {
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.3))), url("/img/projectForkify1.png");
   background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("/img/projectForkify1.png");
@@ -350,11 +355,6 @@ body {
 .project--banker {
   background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.3))), url("/img/projectBankist1.png");
   background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("/img/projectBankist1.png");
-}
-
-.project--mapty {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.3))), url("/img/projectMapty1.png");
-  background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("/img/projectMapty1.png");
 }
 
 .project:hover {
@@ -485,6 +485,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.project__tools-used {
+  color: #181818;
+}
+
 .project__link:hover .project__content,
 .project__github-link:hover + .project__link .project__content {
   -webkit-transform: translateY(-15rem);
@@ -502,6 +506,10 @@ body {
     background-image: -webkit-gradient(linear, left top, right top, from(#258d55), to(rgba(37, 141, 85, 0.8))), url("/img/projectNatourae1.png");
     background-image: linear-gradient(to right, #258d55, rgba(37, 141, 85, 0.8)), url("/img/projectNatourae1.png");
   }
+  .project--crown-clothing {
+    background-image: -webkit-gradient(linear, left top, right top, from(#258d55), to(rgba(37, 141, 85, 0.8))), url("/img/projectCrownClothing1.png");
+    background-image: linear-gradient(to right, #258d55, rgba(37, 141, 85, 0.8)), url("/img/projectCrownClothing1.png");
+  }
   .project--forkify {
     background-image: -webkit-gradient(linear, left top, right top, from(#258d55), to(rgba(37, 141, 85, 0.8))), url("/img/projectForkify1.png");
     background-image: linear-gradient(to right, #258d55, rgba(37, 141, 85, 0.8)), url("/img/projectForkify1.png");
@@ -509,10 +517,6 @@ body {
   .project--banker {
     background-image: -webkit-gradient(linear, left top, right top, from(#258d55), to(rgba(37, 141, 85, 0.8))), url("/img/projectBankist1.png");
     background-image: linear-gradient(to right, #258d55, rgba(37, 141, 85, 0.8)), url("/img/projectBankist1.png");
-  }
-  .project--mapty {
-    background-image: -webkit-gradient(linear, left top, right top, from(#258d55), to(rgba(37, 141, 85, 0.8))), url("/img/projectMapty1.png");
-    background-image: linear-gradient(to right, #258d55, rgba(37, 141, 85, 0.8)), url("/img/projectMapty1.png");
   }
   .project__github-link:link, .project__github-link:visited {
     opacity: 1;
